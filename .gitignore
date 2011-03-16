@@ -1,0 +1,5 @@
+pypy*
+jython
+proxy
+*.pyc
+*.class
