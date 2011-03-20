@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 #This program is used to play song by mplayer
 #it needs a list, the directory of list is '~/.musicmanager/musiclist'
 

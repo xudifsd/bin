@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 #this program help me copy other's video file into my '/home/xudifsd/Videos' silience
 #Last modify: 2010-7-8	Author: xudifsd
 

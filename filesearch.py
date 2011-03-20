@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 #Last modify: 2010-7-12	Author: xudifsd
 
 #2010-07-08 notice this time i use class instead one function,this can use no global varity! and it will be easy to extend it.
