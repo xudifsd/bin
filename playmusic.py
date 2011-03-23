@@ -16,6 +16,8 @@
 
 #2011-01-06 IMPORTANT UPDATE ! This modify divide a big program into many small parts and use .musicmanager/musiclist to store list file , and make it classlized
 
+#2011-03-23 Make the process of playmusic a self name instead of python
+
 import os
 import sys
 import random
@@ -23,6 +25,9 @@ from argumentsParse import argumentsParse	#create by myself
 
 class MusicManager:
 	def __init__(self,listname=None,debug=False):	#listname is just a name , not a path!!!
+		import dl
+		libc = dl.open('/lib/libc.so.6')
+		libc.call('prctl',15,'musicmanager',0,0,0)	#set process name to 'musicmanager'
 		self.USER_HOME=os.environ['HOME']
 		self.MUSIC_HOME=os.path.join(self.USER_HOME,'Music')
 		self.PROGRAM_HOME=os.path.join(self.USER_HOME,'.musicmanager')
